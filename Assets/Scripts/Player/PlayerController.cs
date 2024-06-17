@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Vector2 curMovementInput;
+    public float moveSpeed;
     public LayerMask groundLayerMask;
 
     Rigidbody rigidbody;
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 dir = transform.forward * curMovementInput.y + transform.right * curMovementInput.x;    // transform: 방향, curMovementInput: 거리
-        dir *= 5;
+        dir *= moveSpeed;
         dir.y = rigidbody.velocity.y;    // 점프했을 때만 변화가 있도록 기본 값을 0으로 설정
 
         rigidbody.velocity = dir;

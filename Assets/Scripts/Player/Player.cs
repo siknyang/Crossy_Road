@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // public CameraController controller;
+
     void Start()
     {
-        
+        GameManager.Instance.Player = this;
+        // controller = GetComponent<CameraController>();
     }
 
     // Update is called once per frame
