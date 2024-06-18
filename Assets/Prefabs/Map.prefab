@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64aea841b1a8ee6478e73d468b52f9bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolSize: 10
+  poolSize: 20
   hatchback: {fileID: 7365519806870871455, guid: 807879277ee93714197179bcc3f190cb, type: 3}
   police: {fileID: 7037760149253129809, guid: faccacbfe5a59354cac650add099570a, type: 3}
   sedan: {fileID: 4053311349135838031, guid: e27a03bdf7195a945b389adb930ba493, type: 3}

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -30,7 +31,10 @@ public class CarsController : MonoBehaviour
         carPoolParent = new GameObject("Cars").transform;
         InitializePool();
         StartCoroutine(SpawnCars());
-        StartCoroutine(RemoveCars());
+        if (carPool.Count > 0 )
+        {
+            StartCoroutine(RemoveCars());
+        }
     }
 
     private void InitializePool()
@@ -69,8 +73,8 @@ public class CarsController : MonoBehaviour
                 else
                     carMovement.speed = 5;
 
-                float spawnTime = Random.Range(0, 2.0f);    // 랜덤 스폰 주기
-                yield return new WaitForSeconds(spawnTime);
+                // float spawnTime = Random.Range(0, 2.0f);    
+                yield return new WaitForSeconds(0.5f);     // 랜덤 스폰 주기
             }
             else
                 yield return null;
@@ -85,6 +89,18 @@ public class CarsController : MonoBehaviour
 
     IEnumerator RemoveCars()
     {
-        yield return null;
+        while (true)
+        {
+            for (int i = activeCar.Count -1 ; i >=0; i--)
+            {
+                if (activeCar[i].transform.position.x < 24.0f || activeCar[i].transform.position.x > 69.0f)   // 자동차 경계 확인
+                {
+                    activeCar[i].SetActive(false);  // 오브젝트 비활성화
+                    carPool.Enqueue(activeCar[i]);  // 오브젝트 풀에 추가
+                    activeCar.RemoveAt(i);  // 리스트에서 해당 오브젝트 제거
+                }
+            }
+            yield return new WaitForSeconds(1.0f);
+        }
     }
 }
