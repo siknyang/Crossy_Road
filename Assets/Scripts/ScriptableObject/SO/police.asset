@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6734ebaddf85c14ab5cd9dd97a0d7c7, type: 3}
+  m_Name: police
+  m_EditorClassIdentifier: 
+  carName: police
+  speed: 8
+  carPrefab: {fileID: 7037760149253129809, guid: faccacbfe5a59354cac650add099570a, type: 3}
