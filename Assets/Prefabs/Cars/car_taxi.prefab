@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4088705105697509399
+--- !u!1001 &3633952629589113971
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.400002
+      value: 8.380001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.16
+      value: 14.160002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalRotation.y
@@ -54,15 +54,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6121567685117610647, guid: 56c1016346081214091f1e52026356f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3251080598355663530, guid: 56c1016346081214091f1e52026356f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2209318446614892440, guid: 56c1016346081214091f1e52026356f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 56c1016346081214091f1e52026356f4, type: 3}
       propertyPath: m_Name
-      value: car_taxi_R
+      value: car_taxi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 56c1016346081214091f1e52026356f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998295342544622823, guid: 56c1016346081214091f1e52026356f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

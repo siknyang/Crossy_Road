@@ -60,9 +60,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4936636452559129746, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3964053268426953841, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3516045690705567323, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
       propertyPath: m_Name
-      value: car_stationwagon_L
+      value: car_stationwagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399303624573202981, guid: 6fb3d46c59d6c2143b23882d43ba4f9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

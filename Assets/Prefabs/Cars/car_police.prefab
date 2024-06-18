@@ -60,9 +60,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5474208295729295931, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -12065747693888474, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
       propertyPath: m_Name
-      value: car_police_L
+      value: car_police
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817693280540034010, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913265438106870207, guid: b2a21c6486e0bb842823394eeae88e50, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
