@@ -74,7 +74,7 @@ public class CarsController : MonoBehaviour
                     carMovement.speed = 5;
 
                 // float spawnTime = Random.Range(0, 2.0f);    
-                yield return new WaitForSeconds(0.5f);     // 랜덤 스폰 주기
+                yield return new WaitForSeconds(0.5f);
             }
             else
                 yield return null;
