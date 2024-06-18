@@ -25,13 +25,15 @@ public class MapManager : MonoBehaviour
     void Update()
     {
         GameObject usedUnit = activeUnit.Peek();
-
         float cameraZ = camera.transform.position.z;
+
+        // 생성 조건
         if (cameraZ + 8 > usedUnit.transform.position.z + unitLength)
         {
             SpawnUnit();
         }
 
+        // 제거 조건(현재 제거 방식이 개수가 부족할 때 오래된 것을 가져다가 쓰는 거라서 해당 코드 미작동. 하지만 예외가 있을 수 있으므로 일단 구현)
         if (usedUnit.transform.position.z + unitLength < camera.transform.position.z)
         {
             RemoveUnit();
