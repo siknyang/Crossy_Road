@@ -7,6 +7,5 @@ public class CarData : ScriptableObject
 {
     [Header("Info")]
     public string carName;
-    public float speed;
     public GameObject carPrefab;
 }
