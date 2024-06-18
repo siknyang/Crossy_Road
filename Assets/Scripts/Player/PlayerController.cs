@@ -11,12 +11,12 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public LayerMask groundLayerMask;
 
-    Rigidbody rigidbody;
+    Rigidbody rb;
     PlayerInput input;
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -43,16 +43,16 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 dir = transform.forward * curMovementInput.y + transform.right * curMovementInput.x;    // transform: 방향, curMovementInput: 거리
         dir *= moveSpeed;
-        dir.y = rigidbody.velocity.y;    // 점프했을 때만 변화가 있도록 기본 값을 0으로 설정
+        dir.y = rb.velocity.y;    // 점프했을 때만 변화가 있도록 기본 값을 0으로 설정
 
-        rigidbody.velocity = dir;
+        rb.velocity = dir;
     }
 
     private void PlayerJump(InputAction.CallbackContext context)
     {
         if (IsGrounded())
         {
-            rigidbody.AddForce(Vector2.up * 5, ForceMode.Impulse);
+            rb.AddForce(Vector2.up * 5, ForceMode.Impulse);
         }
     }
 
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     private void PlayerStop(InputAction.CallbackContext value)
     {
         curMovementInput = Vector2.zero;
-        rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 
     bool IsGrounded()
