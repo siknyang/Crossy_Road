@@ -24,7 +24,7 @@ public class CarsController : MonoBehaviour
     private List<GameObject> activeCar = new List<GameObject>();    // 오브젝트 정보
     private Queue<GameObject> carPool = new Queue<GameObject>();    // 오브젝트 담기
     private Transform carPoolParent;    // 오브젝트 풀 담을 곳
-
+    Transform prePos = null;    // 이전 생성 오브젝트 위치
 
     void Start()
     {
@@ -56,7 +56,13 @@ public class CarsController : MonoBehaviour
         {
             if (carPool.Count > 0)
             {
-                Transform spawnPos = GetRandomPos();    // 4개 스폰 포인트 중 랜덤 생성
+                Transform spawnPos;
+                do
+                    spawnPos = GetRandomPos();    // 4개 스폰 포인트 중 랜덤 생성
+                while (spawnPos == prePos);     // 스폰 위치가 이전과 같으면 다시 생성
+
+                prePos = spawnPos;  // 새로 생성한 스폰 값 저장
+
                 GameObject car = carPool.Dequeue();
                 car.transform.position = spawnPos.position;
                 car.transform.rotation = spawnPos.rotation;
@@ -73,7 +79,6 @@ public class CarsController : MonoBehaviour
                 else
                     carMovement.speed = 5;
 
-                // float spawnTime = Random.Range(0, 2.0f);    
                 yield return new WaitForSeconds(0.5f);
             }
             else
