@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 747f78fbe7f26314a8054cbc5cc1460f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50
+      value: 55.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 747f78fbe7f26314a8054cbc5cc1460f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 747f78fbe7f26314a8054cbc5cc1460f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.77
+      value: 9.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 747f78fbe7f26314a8054cbc5cc1460f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b43c2e1ed3f7241b7c04d8d64c6a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
