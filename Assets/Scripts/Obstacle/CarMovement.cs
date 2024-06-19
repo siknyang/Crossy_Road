@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
+    [HideInInspector]
     public float speed;
 
     private void Update()
